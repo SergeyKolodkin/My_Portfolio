@@ -1,5 +1,7 @@
+
+// Header Fixed
 $(function(){
-    // console.log("Hi");
+    
     let header= $("#header");// выбор элемента по id, если по классу то .header
     let intro= $("#intro");
     let introH= intro.innerHeight();
@@ -23,8 +25,23 @@ $(function(){
 
     });
 
-    console.log(introH);
-    console.log(scrollPos);
-  
+    // smooth scroll
+    $("[data-scroll]").on("click", function(event){
 
-})
+        event.preventDefault();
+
+       let blockId=$(this).data('scroll');
+       let elementOffset=$(blockId).offset().top;
+       console.log(elementOffset);
+
+       $()
+
+
+
+
+
+    });
+    
+
+
+});
