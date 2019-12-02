@@ -49,6 +49,7 @@ p{
 
 .header.fixed
 {
+    
     height: auto;
     position: fixed;
     background-color: #31344e;
@@ -56,9 +57,13 @@ p{
 
 .header.fixed .header__inner
 {
+
     padding: 15px 0; 
     border-bottom: 0;
 }
+
+
+
 
 /*Header__inner*/
 /*=============================================================*/
@@ -99,7 +104,11 @@ p{
 .nav__link:hover/*Определяет стиль элемента при наведении на него курсора мыши, но при этом элемент еще не активирован*/
 {
     opacity:1;
+
 }
+
+
+
 
 /*intro*/
 /*=============================================================*/
@@ -439,6 +448,18 @@ p{
     background-color:#53354a;
 }
 
+.reviews__slider{
+    height: 500px;
+    overflow: hidden;
+
+}
+
+.reviews__slider.slick-initialized {
+    height: auto;
+    
+
+}
+
 .reviews__item{
 
     display: flex;
@@ -492,6 +513,52 @@ p{
     text-transform: uppercase;
 
 
+}
+
+/* Slick */
+.slick-dots
+{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 50%;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.slick-dots li
+{
+  
+    margin-right: 10px;
+}
+
+.slick-dots button
+{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50% ;
+    border: 0;
+    padding: 0;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+}
+
+.slick-dots .slick-active button
+{
+    background-color:#53354a;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.slick-dots button:focus
+{
+   outline: none; 
 }
 
 
@@ -665,7 +732,25 @@ p{
 
 @media(max-width:991px){
     .nav{
-        display: none;
+    display: none; 
+    width: 100%;
+    flex-direction: column;
+    background-color: #31344e;
+    text-align: right;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    }
+
+    .nav__link
+    {
+        padding: 7px 15px;
+    }
+    
+    .nav.show
+    {
+        display: flex;
+
     }
 
 
