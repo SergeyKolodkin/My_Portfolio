@@ -1,0 +1,38 @@
+<html>
+<head>
+<title> Я смайлик</title>
+</head>
+<script type="text/javascript">
+
+function resizeRock(){
+
+document.getElementById("ISmail").style.height=(document.body.clientHeight-100)*0.9;
+}
+
+function greetUser() {
+        alert('привет,семпай');
+      }
+
+
+function touchRock()
+{
+var userName=prompt("Как вас зовут?", "Введите ваше имя.");
+if(userName){
+alert("Рад вас видеть,"+ userName+".");
+document.getElementById("ISmail").src ="Happy.jpg";
+setTimeout("document.getElementById('ISmail').src ='lonely.jpg';",2000);
+}
+
+
+
+}
+</script>
+
+
+<body onload="resizeRock();greetUser(); onresize=resizeRock()">
+<div style="margin-top:100px; text-aligh: center">
+<img id="ISmail" src="Ismail.jpg" alt="Smail" style="cursor:pointer"
+onclick ="touchRock();"/>
+</div>
+</body>
+</html>=
