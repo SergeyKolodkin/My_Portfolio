@@ -1,0 +1,515 @@
+body{
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px; 
+    /* color: white; */
+}
+
+*,
+*:before,
+*:after{
+
+    box-sizing: border-box;
+
+}
+
+span
+{
+    text-transform: uppercase;
+}
+
+
+
+/* Container
+=================================================== */
+.container
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.sloy
+{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index:1000;
+}
+
+
+
+/* Header
+=================================================== */
+
+.header{
+    position: relative;
+    border-bottom: 2px solid #ffffff42 ;
+   
+    
+
+
+
+}
+
+.header__inner{
+
+    display: flex;
+    justify-content:space-around
+    
+
+
+    
+}
+
+/* Logo */
+
+.logo__size
+{
+    width: 100%;
+    max-width:281px;
+ 
+}
+
+.logo__Volkswagen
+{
+    position: absolute;
+ 
+}
+
+.header__logo
+{
+    position:relative;
+    width: 281px;
+    height: 227px;
+}
+
+.header__logo .overlay
+{
+    position:absolute;
+    top: 25%;
+    left: 25%;
+    margin: -50px 0 0 -50px;
+    width: 247px;
+    height: 158px;
+}
+
+
+
+.header__title
+{
+  
+
+    display: flex;
+    flex-direction: row;
+    margin-top:25px;
+    margin-bottom:25px;
+    
+
+}
+
+
+
+
+/* Servis
+============================================================= */
+.servis
+{
+    color: white;
+    margin-right:80px;
+  
+
+}
+
+.servis__title
+{
+    margin: 0;
+    font-size: 33px;
+  
+  
+
+
+}
+
+.servis__text
+{
+    color: rgba(255, 255, 255, 0.493);
+    font-size: 16px;
+}
+
+
+
+/* Avtolux
+================================================================== */
+.logo__avtolux
+{
+    margin-right:80px;
+   
+}
+
+.contacts{
+    color: white;
+
+}
+
+.tel
+{
+    font-size: 33px;
+    font-weight:500;
+}
+
+.contacts__text
+{
+    font-size:16px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.493);
+}
+
+/* nav
+===================================================================== */
+.nav
+{
+    display: flex;
+
+    color: white;
+    height: 40px;
+
+}
+
+
+
+.nav__inner
+{
+
+
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px ;
+    margin-left: 340px; 
+    
+
+}
+
+.nav__links
+{
+ 
+   font-size: 19px;
+}
+
+.nav__link
+{
+    margin-right: 25px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.nav__link:hover
+{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.493);
+}
+
+.nav__link:last-child{
+    margin-right: 0; 
+}
+
+
+/* social
+===================================================================== */
+.social
+{
+   display: flex;
+
+}
+
+.social__item
+{
+
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    transition: background .1s;
+}
+
+
+
+.social__item:last-child
+{
+
+    margin-right: 0px;
+}
+
+/*Facebook  
+=================================================================================*/
+
+.social__iconFacebook
+{
+  
+    height: 25px;
+    width: 25px;
+  
+    fill:#9b9b9b;
+}
+ 
+.social__iconFacebook:hover
+{
+    fill:#4065b4;
+  
+  
+}
+
+/*Youtube  
+=================================================================================*/
+
+.social__iconYoutube
+{
+  
+    height: 25px;
+    width: 25px;
+   
+    fill:#9b9b9b;
+}
+ 
+.social__iconYoutube:hover
+{
+    fill:#df1818;
+    background-color: rgba(255, 255, 255, 0);
+
+  
+}
+
+/* Vk 
+============================================================================== */
+.social__iconVK
+{
+  
+    height: 25px;
+    width: 25px;
+   
+    fill:#9b9b9b;
+
+}
+ 
+.social__iconVK:hover
+{
+    fill:#4e759d;
+    background-color: white;
+ 
+  
+}
+
+/* twitter 
+===============================================================================*/
+
+.social__iconTwitter
+{
+  
+    height: 25px;
+    width: 25px;
+   
+    fill:#9b9b9b;
+
+}
+ 
+.social__iconTwitter:hover
+{
+    fill:#017dfa;
+    
+ 
+  
+}
+
+/* odnoklassniki
+===============================================================================*/
+
+.social__iconOdnoklassniki
+{
+  
+    height: 25px;
+    width: 25px;
+   
+    fill:#9b9b9b;
+
+}
+ 
+.social__iconOdnoklassniki:hover
+{
+    fill:#ff6004;
+    background-color: white;
+ 
+  
+}
+
+/* Intro 
+======================================================================================== */
+.intro{
+ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items:flex-end;
+    
+
+    height: 736px;
+    background:  #31344e url("../img/intro.jpg") center no-repeat /cover;
+    padding-top:130px;
+   
+}
+
+.intro__inner
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    
+
+   
+
+   
+}
+
+.intro__item
+{
+ 
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    margin-bottom: 90px;
+    margin-right: 3px;
+
+
+    
+
+}
+
+.intro__item:last-child
+{
+ 
+
+    margin-right: 0px;
+    padding-right: 0px;
+
+
+    
+
+}
+
+.btn
+{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    padding: 27px 35px;
+    /* наследуем у родителя */
+    font-family: inherit;  
+    border: none;
+    cursor: pointer;
+    transition:background .2s linear;
+    background-color:#525456;
+
+}
+
+.btn:active
+{
+    background-color:#918f8f;
+
+}
+
+/*aboutService*/
+
+.aboutService
+{
+    height: 456px;
+    overflow: hidden;
+}
+
+.aboutService__body
+{
+    margin: 0;
+    padding: 0;
+    perspective: 1px; 
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.aboutService__body::-webkit-scrollbar 
+{
+    width:0px;
+}
+
+.aboutService__parallax
+{
+    min-height: 456px;
+    padding-top: 50px;
+    transform-style: inherit;
+    width: 100vw;
+}
+
+.aboutService__parallax:before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    transform-origin: center;
+    min-height: inherit;
+    background:  #31344e url("../img/blur.jpg") center no-repeat /cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+    /* Параллакс */
+    transform: translateZ(-1px) scale(2);
+  }
+
+  .aboutService__title
+  {
+      font-size: 29px;
+      margin: 0;
+      text-align: center;
+      font-family: 'Bitte', sans-serif;
+      font-weight: bold;
+      color: white;
+
+
+  }
+
+            
+
+  
+
+  .aboutService__items
+  {
+    width: 50%;
+    text-align: center;
+    padding: 0 20px;
+    margin: 50px 0;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
