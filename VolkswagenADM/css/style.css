@@ -1,8 +1,9 @@
 body{
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 14px; 
-    /* color: white; */
+    font-size: 14px;
+    background-color:#ececec;
+ 
 }
 
 *,
@@ -436,6 +437,7 @@ span
     transform-style: preserve-3d;
     overflow-y: scroll;
     overflow-x: hidden;
+    height: 456px;
 }
 
 .aboutService__body::-webkit-scrollbar 
@@ -473,30 +475,177 @@ span
 
   .aboutService__title
   {
-      font-size: 29px;
+      font-size: 30px;
       margin: 0;
       text-align: center;
       font-family: 'Bitte', sans-serif;
       font-weight: bold;
       color: white;
+      line-height:1.3;
 
 
   }
 
-            
-
-  
-
+  .aboutServise__inner
+  {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+   
+  }
   .aboutService__items
   {
     width: 50%;
-    text-align: center;
+    text-align: left;
     padding: 0 20px;
-    margin: 50px 0;
+    margin-top: 50px;
+    font-size:30px;
+    color: white;
+  }
+
+  .aboutService__text
+  {
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+    font-size:30px;
+    margin:0 50px;
+ 
+    color:white;
+  }
+
+/* maintenance */
+
+  .maintenance
+   {
+
+    height: 736px;
+    background:  #ececec url("../img/Car.png") center no-repeat ;
+
+   }
+
+  
+
+   .maintenance__title
+   {
+
+    font-size: 30px;
+    margin-top:85px;
+    margin-bottom:70px;
+    text-align: center;
+    font-family: 'Bitte', sans-serif;
+    font-weight: bold;
+    color: #3a4e70;
+    line-height:1.3;
+
+
+   }
+
+   .maintenance__inner
+   {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+  
+
+       margin: 0 27px;
+   }
+
+
+   .maintenance__item
+   {
+    display: flex;
+    justify-content:flex-start;
+    text-align: left;
+
+    width: 50%;
+
+   }
+
+   .maintenance__text
+   {
     
+
+    margin-top: 50px;
+    font-size:30px;
+    color:#484747;
+    width: 70%;
+    padding-top: 5px;
+  
+   }
+   .maintenance__text--right
+   {
+    text-align: right;
+    margin-right: 60px;
+
+   }
+
+   .maintenance__item--right
+   {
+
+    justify-content:flex-end;
+    text-align: right;
+    margin-right: 0;
+
+    
+   }
+
+   .maintenance__footer
+   {
+       display:flex;
+       width: 100%;
+
+
+   }
+
+
+   .titres
+   {
+    margin:0;
+    padding:0;
+    font-family: 'Bitte', sans-serif;
+
+   }
+
+   .parallax {
+    position:relative;
+    z-index:1;
+    height:450px;
+    -webkit-box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
+    box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
+  }
+
+  #tires {
+    background: url("../img/tires.jpg") no-repeat fixed;
+    height:575px;
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .content {
+    box-sizing:border-box;-moz-box-sizing:border-box;
+    position:relative;
+    z-index:2;
+    background:#FFF;
+    width:100%;
+  
+    margin:0;
+    padding:10px 20px;
+    -webkit-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+    text-align:left;
   }
 
 
+
+
+   
+  
 
 
 
