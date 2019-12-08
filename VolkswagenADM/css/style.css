@@ -28,6 +28,7 @@ span
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    
 
 }
 
@@ -435,7 +436,7 @@ span
     padding: 0;
     perspective: 1px; 
     transform-style: preserve-3d;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
     height: 456px;
 }
@@ -465,7 +466,7 @@ span
     z-index: -1;
     transform-origin: center;
     min-height: inherit;
-    background:  #31344e url("../img/blur.jpg") center no-repeat /cover;
+    background:  #31344e url("../img/blur.jpg") fixed center no-repeat /cover;
     background-repeat: no-repeat;
     background-size: cover;
     transition: 1s;
@@ -598,22 +599,26 @@ span
 
    }
 
+   /* tireles */
+
 
    .titres
    {
     margin:0;
     padding:0;
     font-family: 'Bitte', sans-serif;
+    background: none;
 
    }
 
    .parallax {
     position:relative;
     z-index:1;
-    height:450px;
+    height:538px;
     -webkit-box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
     box-shadow: inset 0px -6px 5px rgba(50, 50, 50, 0.75);
+    
   }
 
   #tires {
@@ -624,22 +629,126 @@ span
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow-y: hidden;
+  }
+  
+  .tires__title
+  {
+      font-size: 33px;
+      margin-top: 45px;
+      margin-bottom: 60px;
+      text-align: center;
+      line-height:0.6;
+      font-weight: bold;
+      color:white
+
   }
 
-  .content {
-    box-sizing:border-box;-moz-box-sizing:border-box;
-    position:relative;
-    z-index:2;
-    background:#FFF;
-    width:100%;
-  
-    margin:0;
-    padding:10px 20px;
-    -webkit-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
-    box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
-    text-align:left;
+  .tires__inner
+  {
+      display:flex;
+      justify-content:flex-end;
+   
+
+
+
   }
+
+  /* brandsCars */
+
+  .brandsCars
+  {
+    display:flex;
+    flex-direction: column;
+    width: 25%;
+  }
+
+  .braidsCars__item
+  {
+      margin-bottom:55px;
+      margin-right:40px ;
+      text-align: right;
+   
+
+  }
+
+  .braidsCars__titls
+  {
+    font-family:'Roboto Condensed', sans-serif;
+    font-size: 31px;
+    font-weight: bold;
+    line-height:1.1;
+    margin-bottom: 5px;
+  }
+
+  .braidsCars__text
+  {
+    font-family: 'Bitte', sans-serif;
+    font-size: 27px;
+    font-weight: lighter;
+    color: white;
+    
+    }
+
+
+/* imgsCars */
+
+  .imgsCars
+  {
+    display:flex;
+    flex-direction: column;
+    width: 25%;
+    
+  }
+
+  .icon__car
+  {
+      margin-bottom:56px;
+
+  
+  }
+
+  .border__vert
+  {
+    border-left: 1px solid #325388;
+    height: 400px;
+    margin-right: 40px;
+  }
+  
+
+/* tiresName */
+
+  .tires__navsLinks
+  {
+    display:flex;
+    flex-direction: column;
+    width: 25%; 
+    font-family: 'Bitte', sans-serif;
+    font-size: 26px;
+    line-height:0.7;
+    
+
+  }
+
+  .tires__navsLink
+  {
+      margin-top: 20px;
+      color:#325388;
+      text-decoration: none;
+      
+   
+  }
+
+    .tires__navsLink:hover
+    {
+
+        font-weight: bold;
+
+    }
+  
+  
+
+  
 
 
 
