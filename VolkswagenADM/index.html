@@ -7,6 +7,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=Bitter:400,700|Roboto+Condensed:300,400,700&display=swap&subset=cyrillic"
         rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Volkswagen</title>
@@ -83,9 +84,9 @@
             </g>
         </symbol>
 
-    </svg>
+    </svg><!-- /SVG sprite -->
 
-
+    <!-- header -->
     <div class="sloy">
         <header class="header">
             <div class="container">
@@ -135,10 +136,10 @@
 
                 </div>
                 <div class="nav__inner">
-                    <div class="nav__links">
-                        <a class="nav__link" href="#" data-scroll="#aboutService">О сервисе</a>
+                    <div class="nav__links" id="nav__links">
+                        <a class="nav__link" href="#" data-scroll="#aboutService" >О сервисе</a>
                         <a class="nav__link" href="#" data-scroll="#tires">Летняя резина</a>
-                        <a class="nav__link" href="#" data-scroll="#Contakts">Контакты</a>
+                        <a class="nav__link" href="#" data-scroll="#address">Контакты</a>
 
                     </div>
 
@@ -196,7 +197,7 @@
         </div>
 
 
-    </div>
+    </div> <!-- /header -->
 
     </div>
 
@@ -229,11 +230,11 @@
 
         </div>
 
-    </div>
+    </div> <!-- /Intro -->
 
     <!-- aboutService -->
 
-    <div class="aboutServise">
+    <div class="aboutServise" id="aboutService">
         <div class="aboutService__body">
             <div class="aboutService__parallax">
                 <div class="container">
@@ -284,7 +285,7 @@
 
 
 
-    </div>
+    </div> <!-- /aboutService -->
 
     <!-- maintenance -->
 
@@ -409,133 +410,312 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> <!-- /maintenance -->
 
-    <div class="tires">
+    <!-- tires -->
+
+    <div class="tires" id="tires" >
         <div class="parallax" id="tires">
-                
+
             <div class="container">
-                    <H2 class="tires__title">Лучшие летние шины для вашего VOLKSWAGEN только у нас</h2>
-                    <div class="tires__inner">
-                            <div class="brandsCars">
-                                <div class="braidsCars__item">
-        
-                                    <div class="braidsCars__titls">
-        
-                                        Volksvagen
-        
-                                    </div>
-                                    <div class="braidsCars__titls">
-        
-        
-                                        Touareg
-                                    </div>
-        
-                                    <div class="braidsCars__text">
-        
-                                        235/65 R17
-        
-        
-                                    </div>
-        
-                                    <div class="braidsCars__text">
-        
-        
-                                        255/60 R17
-        
-                                    </div>
-        
-                                </div>
-        
-                                <div class="braidsCars__item">
-        
-                                    <div class="braidsCars__titls">
-        
-                                        Volksvagen Jetta
-                                    </div>
-        
-                                    <div class="braidsCars__text">
-        
-                                        195/65 R15
-        
-                                    </div>
-        
-                                </div>
-        
-                                <div class="braidsCars__item">
-        
-                                    <div class="braidsCars__titls">
-        
-                                            Volksvagen Polo
-                                            sedan
-                                    </div>
-        
-                                    <div class="braidsCars__text">
-        
-                                            175/70 R17
-        
-                                    </div>
-        
-                                </div>
-        
-        
-        
+                <H2 class="tires__title">Лучшие летние шины для вашего VOLKSWAGEN только у нас</h2>
+                <div class="tires__inner">
+                    <div class="brandsCars">
+                        <div class="braidsCars__item">
+
+                            <div class="braidsCars__titls">
+
+                                Volksvagen
+
                             </div>
-        
-                            <div class="imgsCars">
-                                <div class="icon__car">
+                            <div class="braidsCars__titls">
 
-                                    <img src="img/imgsCars/Car-1.png" alt="">
 
-                                </div>
-
-                                <div class="icon__car">
-                                        <img src="img/imgsCars/Car-2.png" alt="">
-                                    
-                                </div>
-
-                                <div class="icon__car">
-                                        <img src="img/imgsCars/Car-3.png" alt="">
-                                    
-                                </div>
-        
-                             
-        
+                                Touareg
                             </div>
 
-                            <div class="border__vert"></div>
-        
-                            <div class="tires__navsLinks">
+                            <div class="braidsCars__text">
 
-                                    <a class="tires__navsLink" href="#">О сервисе</a>
-                                    <a class="tires__navsLink" href="#">Летняя резина</a>
-                                    <a class="tires__navsLink" href="#">Контакты</a>
-                                    <a class="tires__navsLink" href="#">О сервисе</a>
-                                    <a class="tires__navsLink" href="#">Летняя резина</a>
-                                    <a class="tires__navsLink" href="#">Контакты</a>
-                                    <a class="tires__navsLink" href="#">О сервисе</a>
-                                    <a class="tires__navsLink" href="#">Летняя резина</a>
-                                    <a class="tires__navsLink" href="#">Контакты</a>
-                                    <a class="tires__navsLink" href="#">О сервисе</a>
+                                235/65 R17
 
 
                             </div>
-        
-        
+
+                            <div class="braidsCars__text">
+
+
+                                255/60 R17
+
+                            </div>
+
                         </div>
 
+                        <div class="braidsCars__item">
+
+                            <div class="braidsCars__titls">
+
+                                Volksvagen Jetta
+                            </div>
+
+                            <div class="braidsCars__text">
+
+                                195/65 R15
+
+                            </div>
+
+                        </div>
+
+                        <div class="braidsCars__item">
+
+                            <div class="braidsCars__titls">
+
+                                Volksvagen Polo
+                                sedan
+                            </div>
+
+                            <div class="braidsCars__text">
+
+                                175/70 R17
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="imgsCars">
+                        <div class="icon__car">
+
+                            <img src="img/imgsCars/Car-1.png" alt="">
+
+                        </div>
+
+                        <div class="icon__car">
+                            <img src="img/imgsCars/Car-2.png" alt="">
+
+                        </div>
+
+                        <div class="icon__car">
+                            <img src="img/imgsCars/Car-3.png" alt="">
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="border__vert"></div>
+
+                    <div class="tires__navsLinks">
+
+                        <a class="tires__navsLink" href="#">О сервисе</a>
+                        <a class="tires__navsLink" href="#">Летняя резина</a>
+                        <a class="tires__navsLink" href="#">Контакты</a>
+                        <a class="tires__navsLink" href="#">О сервисе</a>
+                        <a class="tires__navsLink" href="#">Летняя резина</a>
+                        <a class="tires__navsLink" href="#">Контакты</a>
+                        <a class="tires__navsLink" href="#">О сервисе</a>
+                        <a class="tires__navsLink" href="#">Летняя резина</a>
+                        <a class="tires__navsLink" href="#">Контакты</a>
+                        <a class="tires__navsLink" href="#">О сервисе</a>
+
+
+                    </div>
+
+
+                </div>
+
             </div>
-          
-                
-              
 
 
 
-         
+
+
+
+
+
+        </div>
+
+    </div> <!-- /tires -->
+
+    <!-- cutaway -->
+
+    <div class="cutaway">
+        <div class="container">
+
+            <div class="cutaway__inner">
+                <div class="cutaway__item">
+                    <div class="cutaway__title">
+
+                        На другие модели VOLKSWAGEN цены и наличие
+                        уточняйте у менеджера.
+                    </div>
+                    <div class="cutaway__tel">
+
+                        +7 (988) 517-91-12
+
+                    </div>
+
+
+                </div>
+
+                <div class="cutaway__item">
+                    <div class="cutaway__text">
+
+                        В сервисном центре «Автолюкс» вы получите грамотную консультацию мастеров, прошедших
+                        профессиональное обучение.
+                        Вы сможете заказать оригинальные запчасти и расходные материалы для автомобиля Volkswagen, а так
+                        же качественные аналоги мировых производителей.
+                        Доставка от 1 дня.<b>Ваш персональный менеджер всегда на связи!</b>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </div> <!-- /cutaway -->
+
+    <!--Castrol  -->
+
+    <div class="castrol">
+        <div class="container">
+            <H2 class="castrol__title"> VOLKSWAGEN рекомендует тех.жидкости и масла CASTROL </H2>
+            <div class="castrol__items">
+
+
+                <img class="castrol__logo" src="img/castrol.png" alt="">
+                <img class="polo" src="img/polo.png" alt="">
+
+
+            </div>
+
+
 
         </div>
 
     </div>
+    <!--/Castrol  -->
+
+    <!-- Adress -->
+
+    <div class="adress" id="address">
+        <div class="container">
+            <h2 class="adress__title">Сервис VOLKSWAGEN в Автолюкс: Баклановский 14</h2>
+        </div>
+        <div class="adess__inner">
+            <img class="adress__map" src="img/contacts__map.png" alt="">
+
+        </div>
+
+
+    </div> <!-- /Adress -->
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer__items">
+                <div class="footer__item">
+                    <div class="footer__logo">
+                        <img src="img/Avtolux.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="footer__item--center">
+                    <div class="footer__title">
+                        Cервис VOLKSVAGEN в Автолюкс
+                    </div>
+                    <div class="footer__text">
+                        ремонт NISSAN в Новочеркасске
+                    </div>
+
+                </div>
+
+                <div class="footer__item">
+
+                    <div class="footer__social--inner">
+                        <div class="footer__social">
+
+                            <div class="social">
+                                <a class="social__item" href="#">
+                                    <svg class="social__iconFacebook">
+                                        <use xlink: href="#facebook"></use>
+
+                                    </svg></a>
+
+                                <a class="social__item" href="#">
+                                    <svg class="social__iconYoutube">
+                                        <use xlink: href="#youtube"></use>
+
+                                    </svg></a>
+
+                                <a class="social__item" href="#">
+                                    <svg class="social__iconVK">
+                                        <use xlink: href="#vk"></use>
+
+                                    </svg></a>
+
+                                <a class="social__item" href="#">
+                                    <svg class="social__iconTwitter">
+                                        <use xlink: href="#twitter"></use>
+
+                                    </svg></a>
+
+                                <a class="social__item" href="#">
+                                    <svg class="social__iconOdnoklassniki">
+                                        <use xlink: href="#odnoklassniki"></use>
+
+                                    </svg></a>
+
+                            </div>
+                        </div>
+                    
+                      
+                    </div>
+                    <div class="footer__contacts">
+                            <div class="footer__tel">
+                                    (928) 182-15-77
+                                </div>
+            
+                                <div class="footer__address">
+                                        ул. Баклановский, 14
+                                   
+                                </div>
+
+                                <div class="footer__address">
+                                     
+                                        Пн-пт: 8.00-20.00 | Сб-вс: 9.00-18.00
+                                </div>
+
+                    </div>
+                    
+                   
+
+
+
+
+                  
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div> <!-- /footer -->
+
 
 
 
